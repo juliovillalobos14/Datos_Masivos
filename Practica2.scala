@@ -1,8 +1,3 @@
-
-
-object Practica2 {
-  def main(args: Array[String]): Unit = {
-    
   // 1. Desarrollar un algoritmo en Scala que calcule el radio de un circulo
   val Lista_Circunferencias = List(15,20,30)
   val pi = 3.14
@@ -42,5 +37,4 @@ object Practica2 {
   // 6. Dada la tupla ((2,4,5),(1,2,3),(3.1416,23))
   val my_tupla = ((2,4,5),(1,2,3),(3.1416,23))
   println(my_tupla._3._1)
-  }
-}
+ 

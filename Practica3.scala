@@ -1,5 +1,4 @@
-object Practica3 {
-  def main(args: Array[String]): Unit = {
+
     import scala.collection.mutable.MutableList
     
     // 1. Crea una lista llamada "lista" con los elementos "rojo", "blanco", "negro"
@@ -34,5 +33,4 @@ object Practica3 {
     // 7. Agrega el siguiente valor al mapa("Miguel", 23)
     mutmap += ("Miguel" -> 23)
     println(mutmap)
-  }
-}
+  

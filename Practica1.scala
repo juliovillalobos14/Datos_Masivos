@@ -1,7 +1,4 @@
 
-
-object Practica1 {
-  def main(args: Array[String]): Unit = {
         val Datos = List(3,10,15)
         val met = 3.2808
         val dll = 18.0
@@ -15,6 +12,4 @@ object Practica1 {
         for(name <- Datos) {
           println(name + " Millas son en kilometros: " + (name * mill))
         }
-        
-  }
- }
+  

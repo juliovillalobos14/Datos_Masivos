@@ -6,27 +6,29 @@ val spar = SparkSession.builder().getOrCreate()
 //del archivo
 val df = spark.read.option("header", "true").option("inferSchema","true")csv("ContainsNull.csv")
 //Vemos el esquema del dataset modificado
-df.printSchema()
+//df.printSchema()
 //Vemos el datasets, ya que es pequeño no hay problema en ver los datos
 df.show()
+val dd = df.Sales
+array_distinct(df.Sales).show()
 
 //Eliminamos aquellos datos que aparecen como nullos
-df.na.drop().show()
+//df.na.drop().show()
 //Al ser doblemente negado, no sufre cambios el dataset
-df.na.drop(2).show()
+//df.na.drop(2).show()
 //Rellenamos aquellos campos vaciós con el dato de 100, cabe mencionar que scala solo modificará 
 //los datos que son nulos y que son de tipo Int
-df.na.fill(100).show()
+//df.na.fill(100).show()
 //Rellenará con "Missin Name" los campos en donde sea un dato null y de tipo string, mismo tipo
 //con el que se rellenará
-df.na.fill("Missing Name").show()
+//df.na.fill("Missing Name").show()
 //En la columna "Name" rellenará con "New Name" aquellos campos que sean null
 //Se menciona como Array ya que una columna es un Array
-df.na.fill("New name", Array("Name")).show() 
+//df.na.fill("New name", Array("Name")).show() 
 //En la columna "Sales" rellenaremos los datos null con el número 200, ya que es una columna de tipo Int (Array)
-df.na.fill(200, Array("Sales")).show() 
+//df.na.fill(200, Array("Sales")).show() 
 //Con está función vemos datos de estadística básica
-df.describe().show()
+//df.describe().show()
 //df.na.fill(400.5, Array("Sales")).show()
 //df.na.fill("Missing name", Array("Name")).show()
 

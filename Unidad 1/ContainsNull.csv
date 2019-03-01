@@ -1,5 +1,5 @@
 Id,Name,Sales, Age, Date, City
 emp1,John,,10,Febrero,Tijuana
-emp2,,,20,Enero,Ensenada
+emp2,,,20,Enero,Tijuana
 emp3,,345.0,,,
 emp4,Cindy,456.0,23,Diciembre,Mexicali
